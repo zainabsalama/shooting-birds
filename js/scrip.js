@@ -1,3 +1,4 @@
+/*** find****/
 let getFinalScore=document.querySelector(".lastScore");
 let getFinalVisit=document.querySelector(".lastVisit");
 let alertName=document.querySelector(".alertname");
@@ -12,12 +13,17 @@ let initScore=document.querySelector(".initScore");
 let KilledBirds=document.querySelector(".birdsKilled");
 let message = document.querySelectorAll("h1");
 let messageImg = document.querySelector(".messageImg");
+let bombSound =document.querySelector(".bomb");
+let gunSound =document.querySelector(".gun");
 let imgId=document.getElementById("msg");
 
 let allBirds = [];
 let bombedBirds = [];
 let scores = 0;
 let killed = 0;
+
+/***  ***/
+
 
 /***  function for creating elements with style    ***/
 function createElementWithTop(sorce,classAdd,objectLeft,objectTop)
@@ -48,6 +54,10 @@ function createBird()
         allBirds.push(bird);
         bodyOfPage.append(bird);
         // return 1
+
+        window.addEventListener("click",function(){
+            gunSound.play();
+        })
    }
 
 /*** function for moving birds ***/
@@ -88,7 +98,9 @@ function moveRight(bird)
     let startDown =moveDown(bomb, 0, left);
 
     bomb.addEventListener("click", function() {
+
         clearInterval(startDown);
+           bombSound.play();
 
         let firedBomb = this;   
          firedBomb.src = "images/fireremove.png";

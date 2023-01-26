@@ -5,7 +5,9 @@ window.addEventListener("load",function(){
         buttonObjectStart.onclick=function(){
       
             alertObject.classList.add("hidden");
+            
 
+           
             startTimer();
 
             /***   Timer for starting creating birds  ***/
