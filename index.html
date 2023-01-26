@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css"> 
+    <!--<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">-->
+</head>
+<body>
+    <div class="container">
+        <div class="container-1">
+            <form action="game.html">
+                <label for="levels">Select Game Level</label><br>
+                    <select name="levels" id="levels">
+                        <option value="" disabled selected hidden>Choose an option</option>
+                        <option value="level-1">Level 1</option>
+                    </select><br>
+                <label for="fname">Enter Your Name</label><br>
+                <input type="text" id="fname" name="fname" placeholder="Enter your name" required><br>
+                <input type="submit" value="Go" onClick="">
+              </form>
+        </div>
+        <div class="container-2">
+            <h1>Game Bird Shooting Points</h1>
+            <img src="birdsImages/bird3.gif" width="100px">
+            <span class="bird-1">+5 Points</span><br>
+            <img src="birdsImages/bird2.gif" width="100px">
+            <span class="bird-2">+10 Points</span><br>
+            <img src="birdsImages/bird1.gif" width="100px">
+            <span class="bird-3">-10 Points</span>
+            <script src="js/index.js"></script>
+        </div>
+    </div>
+ 
+    
+</body>
+</html>

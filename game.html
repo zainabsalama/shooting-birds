@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="css/styleGame.css">
+</head>
+<body>
+    <div class="gaming">
+        <div class="alert">
+            <img src="images/exclamination.png" width="100px">
+            <h1>Welcome <span class="alertname"></span></h1>
+            <p>We hope you enjoy our game</p>
+            
+            <p>To win you should kill 25(black and white) birds in specific time</p>
+            <button>Start Game</button>
+        </div>
+        <div class="welcome">
+            Welcome: <span class="welcomename"></span>
+        </div>
+        <div class="score">
+            Score : <span class="initScore">0</span>
+        </div>
+        <div class="time">
+            Time Limit : <span class="timeLimit">0:0</span>
+        </div>
+        <div class="birds">
+            Birds Killed : <span class="birdsKilled">0</span>
+        </div>
+        <div class="finalAlert" id="msg" >
+            <h1></h1>
+            <img alt="" class="messageImg">
+            <br>
+            <h1></h1>
+            <p class="lastScore"></p>
+            <p class="lastVisit"></p>
+            <button>Play again</button>
+        </div>
+    </div>
+    <script src="js/scrip.js"></script>
+    <script src="js/consuming.js"></script>
+    
+</body>
+</html>
