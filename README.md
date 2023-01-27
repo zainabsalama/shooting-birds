@@ -16,7 +16,7 @@
 
 ### Examples of result
 <p align="center">
-<img src="screenshot/score.png" width="80%"/>
+<img src="screenshot/scores.png" width="80%"/>
 </p>
 
 
